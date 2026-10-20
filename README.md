@@ -307,6 +307,6 @@ Released under the [MIT License](LICENSE). See `LICENSE` for details.
 **404 Not Found** · Team ID `VTU-QFF-HC-0046` · Tier `Both`
 · Built with ⚛️ Qiskit for the VTU-QFF Hackathon
 
-[⬆ Back to Top](#404 Not Found)
+[⬆ Back to Top](#404-not-found)
 
 </div>
