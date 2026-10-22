@@ -46,9 +46,9 @@
 
 | # | Name | GitHub Username | Role |
 | :-- | :--- | :--- | :--- |
-| 1 | Deepak Prakash Yaragatti | deepakyaragatti24-max | _Team Lead_ |
-| 2 | Supreet Raghavendra Salunke | SupreetSalunke | _Developer_ |
-| 3 | Rohit | rohitjadhav181205 | _Developer_ |
+| 1 | _Add your name_ | _your-github-username_ | _Team Lead_ |
+| 2 | _Add your name_ | _your-github-username_ | _Developer_ |
+| 3 | _Add your name_ | _your-github-username_ | _Developer_ |
 
 <!--
 Optional: add a plain list instead of the table above.
@@ -66,11 +66,11 @@ who experiences it, and why does it matter. Link to the official problem
 statement from the brief if one applies.
 -->
 
-**Problem:** Quantum Key Distribution (QKD) systems can experience noise, photon loss, and potential eavesdropping attempts, making it challenging to distinguish security threats from normal communication disturbances. Q-Sentinel uses AI/ML to analyze simulated quantum communication data and identify suspicious patterns.
+**Problem:** _Describe the problem in 2–3 sentences._
 
-**Why it matters:** Early detection of unusual communication behavior can help improve security monitoring, reduce false alarms, and support the development of more reliable quantum communication networks. The project is fully software-based and does not require physical quantum hardware.
+**Why it matters:** _Explain the impact or opportunity._
 
-**Track / Category:** Quantum Computing + Artificial Intelligence & Machine Learning (AI/ML) · Online / Offline: As per hackathon guidelines · Track 1 / Track 2: Confirm with the organizer's track definitions.
+**Track / Category:** _Online / Offline · Track 1 / Track 2 · <domain>_
 
 ---
 
@@ -81,11 +81,11 @@ Describe your solution. Keep it concrete: the core idea, the user flow, and
 the quantum/ML technique you are applying.
 -->
 
-**Solution:** Q-Sentinel is an AI-powered monitoring system that simulates Quantum Key Distribution (QKD) communication and analyzes measurements to detect suspicious activity. It uses machine learning to identify unusual patterns caused by simulated eavesdropping, channel noise, or photon loss and displays alerts through an interactive dashboard.
+**Solution:** _In 2–3 sentences, describe what you built._
 
-**Key idea:** Combine quantum communication simulation with ML-based anomaly detection to identify suspicious communication patterns and distinguish them from normal channel disturbances.
+**Key idea:** _The one-line technical summary of your approach._
 
-**Why this works:** By analyzing multiple communication measurements rather than relying only on fixed thresholds, Q-Sentinel can identify complex patterns and help reduce false alarms. Its performance is evaluated against conventional detection methods using simulated scenarios, without requiring physical quantum hardware.
+**Why this works:** _How your approach addresses the problem statement._
 
 ---
 
@@ -103,16 +103,11 @@ flowchart LR
     D --> E[Output]
 ```
 
-1. **Input** — Communication Data
-The system takes simulated Quantum Key Distribution (QKD) data generated using the BB84 protocol. The data is stored in CSV format and includes QBER, photon detection rate, channel loss, measurement outcomes, and scenario labels such as normal communication, noise, or simulated eavesdropping.
-2. **Preprocessing** — Feature Extraction
-The system cleans missing or invalid values, normalizes numerical features where necessary, and extracts useful indicators such as QBER changes and detection-rate variations. The features are organized into numerical vectors suitable for machine learning.
-3. **Quantum core** — BB84 Simulation
-A quantum circuit simulator, such as Qiskit, models quantum-state preparation, transmission, measurement, and selected attack scenarios. The simulator generates measurement outcomes and communication statistics; a quantum machine learning classifier can optionally be added as an advanced extension.
-4. **Post-processing** — Detection and Risk Scoring
-The measured statistics are used by a machine learning model, such as Random Forest, to classify communication scenarios or identify anomalies. The system calculates alert levels based on model predictions and configured rules, helping distinguish suspicious patterns from ordinary channel disturbances.
-5. **Output** — Security Monitoring Dashboard
-The user receives a dashboard displaying communication status, QBER graphs, detected anomalies, potential threat alerts, and explanations of relevant measurements. The system also provides model evaluation metrics such as precision, recall, F1 score, and false-positive rate.
+1. **Input** — _what data goes in and in what format_
+2. **Preprocessing** — _cleaning, feature extraction, encoding_
+3. **Quantum core** — _the circuit, ansatz, or algorithm used_
+4. **Post-processing** — _decoding, measurement, scoring_
+5. **Output** — _what the user finally gets_
 
 ---
 
